@@ -1,0 +1,30 @@
+###
+POST http://localhost:9000/api/adduser HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Simon Bolivar", 
+    "year": 1783, 
+    "bio": "Libertador nacido en Caracas",
+    "image": "https://www.biografiasyvidas.com/biografia/b/fotos/bolivar_simon.jpg"
+}
+
+###
+GET http://localhost:9000/api/readuser HTTP/1.1
+
+###
+GET http://localhost:9000/api/finduser/63f8276b798a0783d811c0b2 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/updateuser/63f8276b798a0783d811c0b2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Simon Bolivar", 
+    "year": 1783, 
+    "bio": "Libertador nacido en Caracas",
+    "image": "https://www.biografiasyvidas.com/biografia/b/fotos/bolivar_simon.jpg"
+}
+
+###
+DELETE http://localhost:9000/api/deleteuser/63f8276b798a0783d811c0b2 HTTP/1.1
